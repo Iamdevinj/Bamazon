@@ -10,3 +10,10 @@ var connect = mysql.createConnection({
     password: "dj101489",
     database:"bamazon"
 })
+
+// make sure connection works
+connect.connect(function(err){
+    if (err) throw err;
+    console.log("this is a good connection");
+    // connection works!!
+})
